@@ -1,0 +1,14 @@
+<!doctype html>
+<input type="checkbox" id="checkbox1"><label>не звонить мне</label><br>
+<input type="checkbox" id="checkbox2"><label>я прочитал и согласен с правилами пользования сервисом</label><br>
+<input type="checkbox" id="checkbox3"><label>я не выбираю эту галочку</label><br>
+<input type="checkbox" id="checkbox4"><label>я подтверждаю, что свобода в интернете — это возможность выбирать галочки</label><br>
+<input type="checkbox" id="checkbox5"><label>мне больше 12 лет</label><br>
+<input type="checkbox" id="checkbox6"><label>это задание выполнено правильно</label><br>
+<button onclick="localStorage.removeItem('checkbox1');checkbox1.value=''">Сохранить</button>
+<script>
+    area.value = localStorage.getItem('area');
+    area.oninput = () => {
+      localStorage.setItem('area', area.value)
+    };
+</script>
